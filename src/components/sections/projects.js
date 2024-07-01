@@ -17,6 +17,7 @@ const StyledProjectsSection = styled.section`
   }
 
   .archive-link {
+    margin-top: 30px;
     font-family: var(--font-mono);
     font-size: var(--fz-sm);
     &:after {
@@ -28,9 +29,9 @@ const StyledProjectsSection = styled.section`
     ${({ theme }) => theme.mixins.resetList};
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 25px 15px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 0px;
 
     @media (max-width: 1080px) {
       grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -39,7 +40,7 @@ const StyledProjectsSection = styled.section`
 
   .more-button {
     ${({ theme }) => theme.mixins.button};
-    margin: 80px auto 0;
+    margin: 60px auto 0;
   }
 `;
 
@@ -182,6 +183,7 @@ const Projects = () => {
               tech
               github
               external
+              internal
             }
             html
           }
@@ -213,7 +215,7 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, internal, title, tech } = frontmatter;
 
     return (
       <div className="project-inner">
@@ -242,7 +244,7 @@ const Projects = () => {
           </div>
 
           <h3 className="project-title">
-            <a href={external} target="_blank" rel="noreferrer">
+            <a href={internal} rel="noreferrer">
               {title}
             </a>
           </h3>
@@ -264,12 +266,10 @@ const Projects = () => {
   };
 
   return (
-    <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
-      </Link>
+    <StyledProjectsSection id="projects">
+      <h2 className="numbered-heading" ref={revealTitle}>
+        Projects
+      </h2>
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (
@@ -305,6 +305,10 @@ const Projects = () => {
       <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
       </button>
+
+      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+        view the archive
+      </Link>
     </StyledProjectsSection>
   );
 };

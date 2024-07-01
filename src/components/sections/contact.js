@@ -3,14 +3,21 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const StyledContactSection = styled.section`
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto 100px;
   text-align: center;
 
-  @media (max-width: 768px) {
-    margin: 0 auto 50px;
+  .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-gap: 50px;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   .overline {
@@ -41,6 +48,16 @@ const StyledContactSection = styled.section`
   }
 `;
 
+const StyledPic = styled.div`
+  position: relative;
+  max-width: 400px;
+
+  @media (max-width: 768px) {
+    margin: 100px auto 0;
+    width: 70%;
+  }
+`;
+
 const Contact = () => {
   const revealContainer = useRef(null);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -55,18 +72,35 @@ const Contact = () => {
 
   return (
     <StyledContactSection id="contact" ref={revealContainer}>
-      <h2 className="numbered-heading overline">What’s Next?</h2>
+      <h2 className="numbered-heading">Contact</h2>
 
-      <h2 className="title">Get In Touch</h2>
+      <div className="inner">
+        <div>
+          <h2 className="title">Get In Touch</h2>
 
-      <p>
-        Although I’m not currently looking for any new opportunities, my inbox is always open.
-        Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-      </p>
+          <p>
+            Please reach out if you have any questions or would like to get in contact. I am always
+            working on new projects, so check back for on-going progress.
+          </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
-      </a>
+          <a className="email-link" href={`mailto:${email}`}>
+            Say Hello
+          </a>
+        </div>
+
+        <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              className="img"
+              src="../../images/contact.jpg"
+              width={500}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </StyledPic>
+      </div>
     </StyledContactSection>
   );
 };

@@ -4,6 +4,7 @@ const variables = css`
   :root {
     --dark-navy: #020c1b;
     --navy: #0a192f;
+    --lighter-navy: #222f43;
     --light-navy: #112240;
     --lightest-navy: #233554;
     --navy-shadow: rgba(2, 12, 27, 0.7);
@@ -14,6 +15,7 @@ const variables = css`
     --white: #e6f1ff;
     --green: #64ffda;
     --green-tint: rgba(100, 255, 218, 0.1);
+    --green-jungle: #003433;
     --pink: #f57dff;
     --blue: #57cbff;
 
@@ -21,6 +23,7 @@ const variables = css`
       sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
+    --fz-xxxs: 10px;
     --fz-xxs: 12px;
     --fz-xs: 13px;
     --fz-sm: 14px;

@@ -153,7 +153,7 @@ const ArchivePage = ({ location, data }) => {
       <main>
         <header ref={revealTitle}>
           <h1 className="big-heading">Archive</h1>
-          <p className="subtitle">A big list of things I’ve worked on</p>
+          <p className="subtitle">A list of things I’ve worked on over the years</p>
         </header>
 
         <StyledTableContainer ref={revealTable}>
@@ -164,27 +164,21 @@ const ArchivePage = ({ location, data }) => {
                 <th>Title</th>
                 <th className="hide-on-mobile">Made at</th>
                 <th className="hide-on-mobile">Built with</th>
-                <th>Link</th>
+                <th>Links</th>
               </tr>
             </thead>
             <tbody>
               {projects.length > 0 &&
                 projects.map(({ node }, i) => {
-                  const {
-                    date,
-                    github,
-                    external,
-                    ios,
-                    android,
-                    title,
-                    tech,
-                    company,
-                  } = node.frontmatter;
+                  const { date, github, external, internal, ios, android, title, tech, company } =
+                    node.frontmatter;
                   return (
                     <tr key={i} ref={el => (revealProjects.current[i] = el)}>
                       <td className="overline year">{`${new Date(date).getFullYear()}`}</td>
 
-                      <td className="title">{title}</td>
+                      <td className="title">
+                        <a href={internal}>{title}</a>
+                      </td>
 
                       <td className="company hide-on-mobile">
                         {company ? <span>{company}</span> : <span>—</span>}
@@ -256,8 +250,7 @@ export const pageQuery = graphql`
             tech
             github
             external
-            ios
-            android
+            internal
             company
           }
           html

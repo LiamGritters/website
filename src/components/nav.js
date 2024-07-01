@@ -193,7 +193,7 @@ const Nav = ({ isHome }) => {
           </div>
         </a>
       ) : (
-        <Link to="/" aria-label="home">
+        <Link to="/#welcome" aria-label="home">
           <div className="hex-container">
             <IconHex />
           </div>
