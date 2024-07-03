@@ -2,7 +2,7 @@
 date: '2024-06-12'
 title: 'Personal Website V2'
 github: 'https://github.com/LiamGritters/website'
-external: 'liamgritters.com'
+external: 'https://liamgritters.com'
 tech:
   - Javascript
 company: ''

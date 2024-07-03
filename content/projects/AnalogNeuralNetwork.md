@@ -1,8 +1,9 @@
 ---
-date: '2019-1-1'
+date: '2019-04-10'
 title: 'Analog Neural Network'
 github: 'https://github.com/LiamGritters/AnalogNeuralNetwork'
 external: ''
+internal: '/archive/analog-nerual-network'
 tech:
   - C++
   - Caffe
@@ -11,4 +12,4 @@ company: 'Carleton University'
 showInProjects: true
 ---
 
-Embeddable web player widget for Apple Music that lets users log in and listen to full song playback in the browser leveraging [MusicKit.js](https://developer.apple.com/documentation/musickitjs). Read more about this project on [9to5Mac](https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/).
+A series of neural networks are characterized to implement rover navigation and demonstrate a sophisticated task central to the realization of self-sufficient in-situ resource utilization. The neural network architecture follows that of a multilayer perceptron (MLP) with three layers.

@@ -144,7 +144,7 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hey there! My name is Liam and I am fascinated on all things robotic. I started my
+              Hey there! My name is Liam and I am fascinated with all things robotic. I started my
               engineering career studying mechanical engineering but quickly pivoted towards
               software development and its iteraction with the physical world.
             </p>
@@ -152,7 +152,7 @@ const About = () => {
             <p>
               Through great experiences in university and the workplace I have continually improved
               upon my skills and focused my interests. I consider myself a generalist but at work I
-              specialize on perception systems for autonomous vehicles.
+              specialize in developing perception systems for autonomous vehicles.
             </p>
 
             <p>Here are a few skills & tools I have learnt over the years:</p>

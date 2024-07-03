@@ -87,10 +87,11 @@ const StyledTabButton = styled.button`
   @media (max-width: 600px) {
     ${({ theme }) => theme.mixins.flexCenter};
     min-width: 120px;
-    padding: 0 15px;
+    padding: 30px 15px;
     border-left: 0;
     border-bottom: 2px solid var(--lightest-navy);
     text-align: center;
+    white-space: pre-line;
   }
 
   &:hover,

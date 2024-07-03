@@ -2,7 +2,8 @@
 date: '2018-03-22'
 title: 'PRSNet'
 github: ''
-external: ''
+external: '/PRSNetDocumentation.pdf'
+internal: '/archive/prsnet'
 tech:
   - C/C++
   - CUDA
