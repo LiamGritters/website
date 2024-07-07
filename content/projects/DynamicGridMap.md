@@ -3,6 +3,7 @@ date: '2024-06-28'
 title: 'Dynamic Occupancy Grid Map'
 github: ''
 external: ''
+internal: '/archive/dynamic-grid-map'
 tech:
   - C++
 company: 'Provectus Robotics'

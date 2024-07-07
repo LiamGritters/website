@@ -1,8 +1,9 @@
 ---
 date: '2021-1-24'
 title: 'Raspberry Pi Security Camera'
-github: 'https://github.com/LiamGritters/'
+github: 'https://github.com/LiamGritters/RaspberryPiSecurityCamera'
 external: ''
+internal: '/archive/rpi'
 tech:
   - C++
   - OpenCV

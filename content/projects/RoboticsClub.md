@@ -3,6 +3,7 @@ date: '2018-04-15'
 title: 'Robotics Club'
 github: ''
 external: ''
+internal: '/archive/robotics-club'
 tech:
   - C/C++
   - Altium Designer
