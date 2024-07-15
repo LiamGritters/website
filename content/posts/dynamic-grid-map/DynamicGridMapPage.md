@@ -21,7 +21,7 @@ The work is based on the following <a href="https://mediatum.ub.tum.de/doc/14592
 I further built upon the work laid out in the paper, below are a few key improvements:
 
 - **Filtering for lidar inputs:** Added filtering based on size, density and height to allow for offroad obstacle detection and determination
-- **Filtering for lidar and radar inputs:** Added Filtering based on radar-cross-section, input velocity, ground height, and range to prevent false positive detection and improve robustness of sensing the surrounding environment.
+- **Filtering for radar inputs:** Added Filtering based on radar-cross-section, input velocity, ground height, and range to prevent false positive detection and improve robustness of sensing the surrounding environment.
 - **Circular buffer for speed and performance:** Integrated a circular buffer to reduce computational overhead during translations, enhancing real-time operation efficiency.
 - **Recursive shadow casting for ray tracing:** Utilized recursive shadow casting to improve obstacle detection accuracy by managing occlusions and shadows effectively.
 - **Height addition for 2.5D representation:** Extended the traditional 2D grid map to a 2.5D representation by incorporating height information, enabling better navigation in three-dimensional spaces and persistence of low obstacles out of the sensor's view.

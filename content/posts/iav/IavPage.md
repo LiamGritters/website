@@ -6,6 +6,8 @@ draft: false
 slug: /archive/iav
 ---
 
+![IAVGroup](./IAV.jpg)
+
 As part of my Final Year University Capstone Project I lead a team of 16 students in designing and developing an autonomous vehicle. The Integrated Autonomous Vehicle (IAV) project is a 4th year capstone project created this year and is part of the Mechanical and Aerospace Department at Carleton University. The overall goal of the project was to create an autonomous shuttle to transport students around the Carleton campus.
 
 I focused on the software integration of the prototype vehicle. This included:

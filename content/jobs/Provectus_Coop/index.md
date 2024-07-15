@@ -1,7 +1,8 @@
 ---
 date: '2017-05-01'
 title: 'Robotics Engineer Co-op'
-company: 'Provectus Robotics (Co-op)'
+company: 'Provectus Robotics'
+internship: true
 location: 'Ottawa, ON'
 range: 'May 2017 - August 2018'
 url: 'https://www.rheinmetall.com/en/company/subsidiaries/provectus-robotics-solutions'
@@ -12,4 +13,4 @@ url: 'https://www.rheinmetall.com/en/company/subsidiaries/provectus-robotics-sol
 - Wrote Bash Scripts to improve installation and archiving of robotic control software
 - Redesigned an autonomous robot’s electrical layout to improve the accessibility and comprehension of the system
 
-<a href="/archive/prsnet"><p style="text-align:center">Read More about my work on PRSNet</p></a>
+<a href="/archive/prsnet"><p style="text-align:center">Read more about my work on PRSNet</p></a>

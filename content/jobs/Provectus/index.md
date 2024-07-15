@@ -13,4 +13,4 @@ url: 'https://www.rheinmetall.com/en/company/subsidiaries/provectus-robotics-sol
 - Wrote and integrated software drivers for various sensors, such as radar and lidar, to allow for precise detection and measurement of the vehicle's surroundings.
 - Performed trials, demos, and training sessions for customers/clients to demonstrate system capabilities and ensure proper usage and understanding.
 
-<a href="/archive/dynamic-grid-map"><p style="text-align:center">Read More about my work on Dynamic Occupancy Grid Maps</p></a>
+<a href="/archive/dynamic-grid-map"><p style="text-align:center">Read more about my work on Dynamic Occupancy Grid Maps</p></a>
