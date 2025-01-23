@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Layout } from '@components';
+import GuessGame from '@components/GuessGame';
 
 const StyledPostContainer = styled.main`
   max-width: 1000px;
@@ -51,17 +52,19 @@ const StyledPostContent = styled.div`
 
 const PostTemplate = ({ data, location }) => {
   const { frontmatter, html } = data.markdownRemark;
-  const { title, date } = frontmatter;
+  const { title, date, game_answer, game_message, draft } = frontmatter;
 
   return (
     <Layout location={location}>
       <Helmet title={title} />
 
       <StyledPostContainer>
-        <span className="breadcrumb">
-          <span className="arrow">&larr;</span>
-          <Link to="/archive">All Work</Link>
-        </span>
+        {!draft && (
+          <span className="breadcrumb">
+            <span className="arrow">&larr;</span>
+            <Link to="/archive">All Work</Link>
+          </span>
+        )}
 
         <StyledPostHeader>
           <h1 className="medium-heading">{title}</h1>
@@ -76,7 +79,13 @@ const PostTemplate = ({ data, location }) => {
           </p>
         </StyledPostHeader>
 
+        {/* Render the content of the markdown post */}
         <StyledPostContent dangerouslySetInnerHTML={{ __html: html }} />
+
+        {/* Add the game component below the post content */}
+        {game_answer && game_message && (
+          <GuessGame answer={game_answer} successMessage={game_message} />
+        )}
       </StyledPostContainer>
     </Layout>
   );
@@ -98,6 +107,10 @@ export const pageQuery = graphql`
         description
         date
         slug
+        draft
+        game_answer
+        game_message
+        audio
       }
     }
   }
