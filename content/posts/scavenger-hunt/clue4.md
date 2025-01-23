@@ -11,6 +11,8 @@ slug: /scavenger/clue-4-are
 Watch the clip with a careful eye, <br>
 The next clue is hidden, don’t let it fly by! <br>
 
-</div>
+<iframe width="560" height="315" src="https://youtube.com/embed/mPZFgv6jMOk" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
 
-clip of me playing with the dog near the dresser, with a clue on the dresser
+</div>
